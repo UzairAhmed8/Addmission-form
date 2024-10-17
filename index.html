@@ -58,9 +58,9 @@
     <div>
         <table>
             <tr>
-                <td colspan="1">1</td>
-                <td colspan="1">1</td>
-                <td colspan="1">1</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
             </tr>
         </table>
     </div>
@@ -68,44 +68,64 @@
     <form action="text">
         <fieldset>
             <legend>Addmission-Form</legend>
-        Student's Name<input type="text" name="" id="">
+        Student's Name<input type="text" name="" id="" required>
         <br>
         <br>
-        Father's Name<input type="text" name="" id="">
+        Father's Name<input type="text" name="" id="" required>
         <br>
         <br>
-        Cast<input type="text" name="" id="">
-        Occupation<input type="text" name="" id="">
+        Cast<input type="text" name="" id="" required>
+        Occupation<input type="text" name="" id="" required>
         <br>
         <br>
-        Qualification<input type="text" name="" id="">
+        Qualification<input type="text" name="" id="" required>
         <br>
         <br>
-        Occupation<input type="text" name="" id="">
+        Occupation<input type="text" name="" id="" required>
         <br>
             <br>
-        Date-of-Birth<input type="text" name="" id="">
-        Class-for-addmission<input type="text" name="" id="">
+        Date-of-Birth<input type="date" name="" id="" required>
+        Class-for-addmission<input type="text" name="" id="" required>
             <br>
             <br>
-        Addmission-fee<input type="text" name="" id="">
-        Tution-fees<input type="text" name="" id="">
+        Addmission-fee<input type="number" name="" id="" required placeholder="20,000">
+        Tution-fees<input type="number" name="" id="" required placeholder="5,000/per-month">
             <br>
             <br>
-        Signature-of-father/Guardians<input type="text" name="" id="">
+            <label for="region">Select-your-Region</label>
+                <select name="region" id="region" required>
+                    <option value="EG" data-code="+92">Pakistan</option>
+                    <option value="SA" data-code="++20">Saudi-Arabia</option>
+                    <option value="AE" data-code="+966">United-Arab-Emirates</option>
+                    <option value="JO" data-code="+971">Jordan</option>
+                    <option value="MA" data-code="+962">Morocco</option>
+                    <option value="LB" data-code="+212">Lebanon</option>
+                    <option value="PK" data-code="+93">Egypt</option>
+                    <option value="TN" data-code="+961">Tanisia</option>
+                    <option value="IQ" data-code="+216">Iraq</option>
+                    <option value="DZ" data-code="+213">Algeria</option>
+                    <option value="QA" data-code="+964">Qatar</option>
+                </select>
+                <br>
+                <br>
+                <label for="phone">Phone-number:</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                <span id="phonecode"></span>
+
+                <input type="submit" value="submit">
             <br>
             <br>
-        Temp.Adress<input type="text" name="" id="">
+        Temp.Adress<input type="text" name="" id="" required>
             <br>
             <br>
-        Perm.Adress<input type="text" name="" id="">
+        Perm.Adress<input type="text" name="" id="" required>
             <br>
             <br>
             <h3>Student-Gender.</h3>
             <br>
-            Male<input type="radio" name="Render" id="">
-            Female<input type="radio" name="Render" id="">
-            Other<input type="radio" name="Render" id="">
+            Male<input type="radio" name="Render" id="" required>
+            Female<input type="radio" name="Render" id="" required>
+            Other<input type="radio" name="Render" id="" required>
             <br>
             <input type="submit" name="" id="">
         </fieldset>
@@ -114,19 +134,19 @@
         <h1 style="text-align: center;"><u>Office-Use</u></h1>        
         <fieldset>
             <legend>Office-Use</legend>
-            Student-Name<input type="text">
+            Student-Name<input type="text" required>
             <br>
             <br>
-            Father's-Name<input type="text">
+            Father's-Name<input type="text" required>
             <br>
             <br>
-            Addmission No<input type="text">
+            Addmission No<input type="text" required>
             <br>
             <br>
-            Registration fee<input type="text">
+            Registration fee<input type="text" required>
             <br>
             <br>
-            Report of admission Committee<input type="text">
+            Report of admission Committee<input type="text" required>
             Email<input type="email" name="" id="">
         </fieldset>
     </form>
